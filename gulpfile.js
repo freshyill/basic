@@ -15,6 +15,7 @@ var changeEvent = function(evt) {
 // Sass
 gulp.task('styles', function() {
   gulp.src(paths.scss)
+    .pipe($.sourcemaps.init())
     .pipe($.size())
     //.pipe($.sourcemaps.init())
     .pipe($.using())
