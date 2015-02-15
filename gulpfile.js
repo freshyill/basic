@@ -17,7 +17,6 @@ gulp.task('styles', function() {
   gulp.src(paths.scss)
     .pipe($.sourcemaps.init())
     .pipe($.size())
-    //.pipe($.sourcemaps.init())
     .pipe($.using())
     .pipe($.sass({
       outputStyle: "compressed",
